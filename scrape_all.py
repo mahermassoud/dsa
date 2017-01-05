@@ -1,5 +1,6 @@
 from selenium import webdriver
 import csv
+import pandas as pd
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 import collections
@@ -110,14 +111,22 @@ def getElem(col_name):
 with open(INPUT_PATH) as infile:
     app_nums = infile.read().splitlines()
 
+table = pd.read_csv(INPUT_PATH, dtype=str)
+#file_nums = list(infile[:,0])
+#app_nums = list(infile[:,0])
+
 rows = []
 # For each app number
-for app in app_nums:
+#for app in app_nums:
+for index, row in table.iterrows():
+
+    office_id = str(row[0])
+    app = str(row[1])
 
     curr_row = []
 
     # visit its summary page
-    enterAppNum(app)
+    enterAppNum(app, office_id)
     # Get all the info we want from app summary page
     for key in PAGE_DICTS[0]:
         curr_row.append(getElem(key))
