@@ -24,29 +24,29 @@ SD_REG = '04-SAN DIEGO'
 # Dictionary with column names as keys and javascript IDs as columns
 # different dict for Application summary page
 APP_SUMM = collections.OrderedDict()
-APP_SUMM["Address"] = "ctl00_ContentPlaceHolder1_lblAddress"
-APP_SUMM["City"] = "ctl00_ContentPlaceHolder1_lblCity"
-APP_SUMM["State"] = ""
-APP_SUMM["Zip"] = "ctl00_ContentPlaceHolder1_lblZip"
-APP_SUMM["App Num"] = "ctl00_ContentPlaceHolder1_lblApplication" # TODO handle
-APP_SUMM["Office ID"] = "ctl00_ContentPlaceHolder1_lblOffice"
-APP_SUMM["Project Name"] = "ctl00_ContentPlaceHolder1_lblPname"
-APP_SUMM["File Num"] = "ctl00_ContentPlaceHolder1_lblFile"
-APP_SUMM["PTN Num"] = "ctl00_ContentPlaceHolder1_lblPTN"
-APP_SUMM["Num incr"] = "ctl00_ContentPlaceHolder1_lblInc"
-APP_SUMM["Project Type"] = "ctl00_ContentPlaceHolder1_lblProjectType"
-#APP_SUMM["Project Scope"] = "ctl00_ContentPlaceHolder1_lblProjectScope" # TODO remove commas
+APP_SUMM["Address"] = "ctl00_MainContent_lblAddress"
+APP_SUMM["City"] = "ctl00_MainContent_lblCity"
+#APP_SUMM["State"] = "" # NO STATE?
+APP_SUMM["Zip"] = "ctl00_MainContent_lblZip"
+APP_SUMM["App Num"] = "ctl00_MainContent_lblApplication" # TODO handle
+APP_SUMM["Office ID"] = "ctl00_MainContent_lblOffice"
+APP_SUMM["Project Name"] = "ctl00_MainContent_lblPname"
+APP_SUMM["File Num"] = "ctl00_MainContent_lblFile"
+APP_SUMM["PTN Num"] = "ctl00_MainContent_lblPTN"
+APP_SUMM["Num incr"] = "ctl00_MainContent_lblInc"
+APP_SUMM["Project Type"] = "ctl00_MainContent_lblProjectType"
+APP_SUMM["Project Scope"] = "ctl00_MainContent_lblProjectScope" # TODO remove commas
 
 PROJ_SCHED = collections.OrderedDict()
-PROJ_SCHED["ACS"] = "ctl00_ContentPlaceHolder1_lblACSplanR"
+PROJ_SCHED["ACS"] = "ctl00_MainContent_lblACSplanR"
 
 PROJ_CERT = collections.OrderedDict()
-PROJ_CERT["Field Engineer"] = "ctl00_ContentPlaceHolder1_lblFieldEnf"
-PROJ_CERT["Void Date"] = "ctl00_ContentPlaceHolder1_lblVoidCanceledDate"
-PROJ_CERT["90 Day Letter Date"] = "ctl00_ContentPlaceHolder1_lbl90DayLetter"
-PROJ_CERT["60 Day Letter Date"] = "ctl00_ContentPlaceHolder1_txt60DayLetter"
-PROJ_CERT["Last Cert Date"] = "ctl00_ContentPlaceHolder1_lblCloseDate"
-PROJ_CERT["Last Cert Letter Type"] = "ctl00_ContentPlaceHolder1_lblCloseLetType"
+PROJ_CERT["Field Engineer"] = "ctl00_MainContent_lblFieldEnf"
+PROJ_CERT["Void Date"] = "ctl00_MainContent_lblVoidCanceledDate"
+PROJ_CERT["90 Day Letter Date"] = "ctl00_MainContent_lbl90DayLetter"
+PROJ_CERT["60 Day Letter Date"] = "ctl00_MainContent_lbl60DayLetter"
+PROJ_CERT["Last Cert Date"] = "ctl00_MainContent_lblCloseDate"
+PROJ_CERT["Last Cert Letter Type"] = "ctl00_MainContent_lblCloseLetType"
 #<input name="ctl00$ContentPlaceHolder1$txt60DayLetter" type="text" readonly="readonly" id="ctl00_ContentPlaceHolder1_txt60DayLetter" style="width:70px;">
 
 PAGE_DICTS = [APP_SUMM, PROJ_SCHED, PROJ_CERT]
