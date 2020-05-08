@@ -7,16 +7,16 @@ import collections
 
 # Input file path, input file is plain text file where each line holds a single
 # application number
-INPUT_PATH = '/Users/massoudmaher/Desktop/app_nums_small.csv'
+INPUT_PATH = 'C:/Code/dsa-project-scraper/INPUT_PATH.csv'
 
 # Output file is spreadsheet in form of a CSV
-OUT_PATH = '/Users/massoudmaher/Desktop/projs.csv'
+OUT_PATH = 'C:/Code/dsa-project-scraper/OUT_PATH.csv'
 
 # JS IDs for:
 # Application number input field on first page
-APP_NUM_IN_ID = "ctl00_ContentPlaceHolder1_txtAppNo"
+APP_NUM_IN_ID = "ctl00_MainContent_txtAppNo"
 # Drop down box to select region
-REG_DROPDOWN = "ctl00_ContentPlaceHolder1_drpdnOffice"
+REG_DROPDOWN = "ctl00_MainContent_drpdnOffice"
 # Selection for sd from dropdown
 SD_REG = '04-SAN DIEGO'
 
@@ -28,7 +28,7 @@ APP_SUMM["Address"] = "ctl00_ContentPlaceHolder1_lblAddress"
 APP_SUMM["City"] = "ctl00_ContentPlaceHolder1_lblCity"
 APP_SUMM["State"] = ""
 APP_SUMM["Zip"] = "ctl00_ContentPlaceHolder1_lblZip"
-APP_SUMM["App num"] = "ctl00_ContentPlaceHolder1_lblApplication" # TODO handle
+APP_SUMM["App Num"] = "ctl00_ContentPlaceHolder1_lblApplication" # TODO handle
 APP_SUMM["Office ID"] = "ctl00_ContentPlaceHolder1_lblOffice"
 APP_SUMM["Project Name"] = "ctl00_ContentPlaceHolder1_lblPname"
 APP_SUMM["File Num"] = "ctl00_ContentPlaceHolder1_lblFile"
